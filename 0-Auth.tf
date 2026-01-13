@@ -127,7 +127,7 @@ resource "aws_instance" "jenkins_server" {
   # -------------------------------------------------------
   # User Data Script (Installs Jenkins)
   # -------------------------------------------------------
-  user_data                  = file("${path.module}/user-data.sh")
+  user_data = file("${path.module}/user-data.sh")
 
 
 
